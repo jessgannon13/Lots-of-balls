@@ -1,5 +1,6 @@
 //declare variables
-int count=width/2;
+int count=2;
+int i=0;
 
 float [] x = new float [count];
 float [] y = new float [count];
@@ -11,16 +12,14 @@ void setup(){
   size(800, 600);
 
   //initialize variables
-  x[0] = width/2;
-  x[1]= 20;
-  y[0] = height/2;
-  y[1]=20;
-  diam[1] = 30;
-  diam[0] = 80;
-  velx[0] = random(-5, 5);
-  velY[0] = random(-5, 5);
-  velx[1] = random(-10,10);
-  velY[1] = random(-10,10);
+  while(i < count){
+  x[i] = width/2;
+  y[i] = height/2;
+  diam[i] = 30;
+  velx[i] = random(-5, 5);
+  velY[i] = random(-5, 5);
+  i++;
+  }
 
 }
 void draw() {
